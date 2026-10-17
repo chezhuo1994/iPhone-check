@@ -1,0 +1,24 @@
+name: Oregon iPhone 18 Pro Max Monitor
+
+on:
+  schedule:
+    # 每 5 分钟在云端自动查一次
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check_stock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests & Run monitor
+        run: |
+          pip install requests
+          python monitor.py
