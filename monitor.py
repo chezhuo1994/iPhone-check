@@ -90,6 +90,5 @@ def check_oregon_stock():
 
 if __name__ == "__main__":
     # 首次运行时如果想要测试微信能否收到，可以把下面这行前面的 # 删掉跑一次：
-    # send_wechat_push("🔔 俄勒冈监控已启动", "你的微信推送配置成功！一旦发现 iPhone 18 Pro Max 512G/1TB 现货会第一时间通知你。")
-    
+    send_wechat_push("🔔 俄勒冈监控已启动", "你的微信推送配置成功！一旦发现 iPhone 18 Pro Max 512G/1TB 现货会第一时间通知你。")
     check_oregon_stock()
