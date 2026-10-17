@@ -78,5 +78,5 @@ def check_oregon_stock():
 
 if __name__ == "__main__":
     # 测试开关（收到手机弹窗后，记得把下面这行最前面加上 # 注释掉并保存）：
-    send_push("🔔 俄勒冈监控已启动", "ntfy 推送配置成功！一旦刷出 512G/1TB 现货会第一时间弹窗提醒你。")
+    # send_push("🔔 俄勒冈监控已启动", "ntfy 推送配置成功！一旦刷出 512G/1TB 现货会第一时间弹窗提醒你。")
     check_oregon_stock()
